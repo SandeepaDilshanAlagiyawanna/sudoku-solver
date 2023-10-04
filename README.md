@@ -69,6 +69,3 @@ This Sudoku solver is open-source and available under the [MIT License](LICENSE)
 
 Feel free to use, modify, and share it as needed. Contributions are welcome!
 
----
-
-You can customize this README template to include specific details about your project, such as installation instructions, additional features, and acknowledgments.
