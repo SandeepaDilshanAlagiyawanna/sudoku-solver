@@ -2,11 +2,11 @@ def is_valid(board, row, col, num):
     """ Checks if the given number is valid for the given cell in the Sudoku board """
     for i in range(9):
         if (
-                # checking is there any same number in row
+                # checking are there any same numbers in a row
                 board[row][i] == num or
-                # checking is there any same number in column
+                # checking are there any same numbers in a column
                 board[i][col] == num or
-                # checking is there any same number in cell(3*3)
+                # checking are there any same numbers in a cell(3*3)
                 board[(row // 3) * 3 + i // 3][(col // 3) * 3 + i % 3] == num
         ):
             # if so return false
@@ -99,10 +99,10 @@ def main():
     solution = solve_sudoku(board)
 
     if solution:
-        print("The solved Sudoku puzzle:")
+        print("Congrats, here is the solved Sudoku puzzle:")
         print_board(solution)
     else:
-        print("No solution found.")
+        print("Sorry, no solution found.")
 
 
 if __name__ == "__main__":
